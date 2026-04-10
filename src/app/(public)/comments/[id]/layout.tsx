@@ -1,19 +1,17 @@
-import React from 'react';
 import {Metadata} from "next";
 
 export const metadata: Metadata = {
-    title: "ContactsLayout metadata"
+    title: "CommentLayout metadata"
 }
 
 type Props = {children: React.ReactNode};
 
-const ContactsLayout = ({children}: Props) => {
+const CommentLayout = ({children}: Props) => {
     return (
         <div>
-            contacts layout
             {children}
         </div>
     );
 };
 
-export default ContactsLayout;
+export default CommentLayout;
