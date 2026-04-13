@@ -1,9 +1,10 @@
+import {PostsComponent} from "@/src/components/posts/PostsComponent";
 
 const PostsPage = () => {
     return (
-        <div>
-            Posts page content
-        </div>
+        <>
+            <PostsComponent/>
+        </>
     );
 };
 

@@ -19,7 +19,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
       <Menu/>
-      <div className="max-width-300 mx-auto">
+      <div className="w-300 mx-auto pt-20">
         {children}
       </div>
       </body>

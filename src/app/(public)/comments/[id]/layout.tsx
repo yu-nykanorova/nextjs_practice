@@ -8,9 +8,9 @@ type Props = {children: React.ReactNode};
 
 const CommentLayout = ({children}: Props) => {
     return (
-        <div>
+        <>
             {children}
-        </div>
+        </>
     );
 };
 

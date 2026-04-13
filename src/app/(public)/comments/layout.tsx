@@ -9,8 +9,7 @@ type Props = {children: React.ReactNode};
 
 const CommentsLayout = ({children}: Props) => {
     return (
-        <div>
-            Comments layout
+        <div className="w-full">
             {children}
         </div>
     );

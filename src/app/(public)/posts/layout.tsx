@@ -9,8 +9,7 @@ type Props = {children: React.ReactNode};
 
 const PostsLayout = ({children}: Props) => {
     return (
-        <div>
-            posts layout
+        <div className="w-full">
             {children}
         </div>
     );
