@@ -3,7 +3,7 @@ import Link from "next/dist/client/link";
 export const Menu = () => {
     return (
         <div>
-            <ul>
+            <ul className="max-w-3xl mx-auto px-10 py-2 flex items-center justify-between">
                 <li>
                     <Link href="/">Home</Link>
                 </li>
