@@ -16,6 +16,9 @@ export const Menu = () => {
                 <li>
                     <Link href="/users">Users</Link>
                 </li>
+                <li>
+                    <Link href="/auth">Auth</Link>
+                </li>
             </ul>
             <hr/>
         </div>
