@@ -1,10 +1,10 @@
+import Link from "next/dist/client/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-
-      </main>
+    <div className="w-full max-w-4xl mx-auto flex flex-col flex-1 items-center py-32 px-16 bg-zinc-50 dark:bg-black">
+        <h1 className="mb-6 text-2xl">Welcome to homepage!</h1>
+        <Link href={"/cars"} className="text-blue-700 text-xl hover:underline">Visit all cars list &#8594;</Link>
     </div>
   );
 }
