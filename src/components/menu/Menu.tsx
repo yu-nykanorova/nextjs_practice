@@ -9,8 +9,8 @@ export const Menu = () => {
     const activeClass = "font-semibold text-orange-500 border-b border-b-orange-400";
 
     return (
-        <nav className="w-screen fixed bg-zinc-300 shadow-lg z-10">
-            <ul className="max-w-4xl mx-auto p-4 flex justify-evenly items-center gap-6">
+        <nav className="w-screen h-20 fixed flex bg-zinc-300 shadow-lg z-10">
+            <ul className="w-full max-w-4xl mx-auto p-4 flex justify-evenly items-center gap-6">
                 <li>
                     <Link href="/" className={`p-1 text-lg ${pathName === "/" ? activeClass : ""}`}>Home</Link>
                 </li>
@@ -18,7 +18,6 @@ export const Menu = () => {
                     <Link href="/cars" className={`p-1 text-lg ${pathName.startsWith("/cars")  ? activeClass : ""}`}>Cars</Link>
                 </li>
             </ul>
-            <hr/>
         </nav>
     );
 };
