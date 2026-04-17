@@ -1,9 +1,10 @@
 import {CarItem} from "@/src/components/cars/CarItem";
-import {getCars} from "@/src/lib/api/cars.service";
 import Link from "next/dist/client/link";
+import {ICar} from "@/src/models/ICar";
 
 export const CarsList = async () => {
-    const cars = await getCars();
+    const res = await fetch("http://localhost:3000/api/cars");
+    const cars: ICar[] = await res.json();
 
     if (!cars.length) {
         console.log("ooops");
