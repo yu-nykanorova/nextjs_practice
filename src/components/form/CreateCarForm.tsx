@@ -7,17 +7,17 @@ export const CreateCarForm = () => {
             <form className="w-1/2 p-8 flex flex-col gap-4 bg-slate-300 rounded-md shadow-xl" action={createCarAction}>
                 <label className="block text-[20px]">
                     <span className="text-red-600">*</span>Brand:
-                    <input className="w-full px-2 py-1 block text-[18px] bg-white rounded-md outline-orange-500" type="text" name="brand" required/>
+                    <input className="w-full px-2 py-1 block text-[18px] bg-white rounded-md outline-orange-500" type="text" name="brand" maxLength={20} required/>
                 </label>
                 <label className="text-[20px]">
                     <span className="text-red-600">*</span>Price:
-                    <input className="w-full px-2 py-1 block text-[18px] bg-white rounded-md outline-orange-500" type="number" name="price" required/>
+                    <input className="w-full px-2 py-1 block text-[18px] bg-white rounded-md outline-orange-500" type="number" name="price" min="0" max="1000000" required/>
                 </label>
                 <label className="text-[20px]">
                     <span className="text-red-600">*</span>Year:
-                    <input className="w-full px-2 py-1 block text-[18px] bg-white rounded-md outline-orange-500" type="number" name="year" required/>
+                    <input className="w-full px-2 py-1 block text-[18px] bg-white rounded-md outline-orange-500" type="number" name="year" min="1990" max="2026" required/>
                 </label>
-                <button className="w-1/3 mt-8 px-4 py-1 self-center text-[20px] bg-white border-2 border-orange-500 rounded-md shadow-xl transition-all duration-200 ease-in-out hover:bg-orange-500 hover:text-white ">Save</button>
+                <button className="w-1/3 mt-8 px-4 py-1 self-center text-[20px] bg-white border-2 border-orange-500 rounded-md shadow-xl transition-all duration-200 ease-in-out hover:bg-orange-500 hover:text-white">Save</button>
             </form>
         </div>
     );
